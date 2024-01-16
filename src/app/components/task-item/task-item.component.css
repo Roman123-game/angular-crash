@@ -1,8 +1,9 @@
 .task {
   background: #f4f4f4;
-  margin: 5px;
+  margin: 8px;
   padding: 10px 20px;
   cursor: pointer;
+  min-width: 110%;
 }
 
 .task.reminder {

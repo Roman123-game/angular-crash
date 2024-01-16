@@ -1,6 +1,6 @@
 import { TaskType } from './TaskType';
 
-export const Tasks: TaskType[] = [
+export const Tasks = [
   {
     id: 1,
     text: 'Doctors Appointment',
