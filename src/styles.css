@@ -9,20 +9,26 @@
 
 body {
   font-family: "Poppins", sans-serif;
+
+
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 
-  width: 350px;
-  margin: 30px auto;
+
+  min-width: 350px;
   text-align: center;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
+}
+.border{
+  border: 1px solid steelblue;
+  width: 350px;
+  background-color: lightblue;
 }
 .btn {
   display: inline-block;
