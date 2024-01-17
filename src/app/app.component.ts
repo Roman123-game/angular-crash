@@ -6,10 +6,18 @@ import { ButtonComponent } from './components/button/button.component';
 import { TaskComponent } from './components/tasks/tasks.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeaderComponent,ButtonComponent,TaskComponent,FontAwesomeModule ],
+  imports: [CommonModule,
+    RouterOutlet,
+    HeaderComponent,
+    ButtonComponent,
+    TaskComponent,
+    FontAwesomeModule,
+    HttpClientModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
