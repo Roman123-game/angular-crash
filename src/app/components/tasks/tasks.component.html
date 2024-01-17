@@ -1,4 +1,7 @@
- <!-- <app-add-task (onAddTask)="addTask($event)"></app-add-task> -->
+ <app-add-todo
+
+ ></app-add-todo>
+ <hr/>
 <app-task-item
 *ngFor="let task of tasks"
 [task]="task"
@@ -6,3 +9,4 @@
 (onToggleTaskEmitter)="toggleTask(task)">
 </app-task-item>
 
+<!-- (onAddTask)="addTask($event)" -->

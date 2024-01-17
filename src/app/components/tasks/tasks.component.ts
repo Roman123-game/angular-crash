@@ -5,10 +5,12 @@ import { TaskType } from '../../objects/TaskType';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TaskServiceService } from '../../services/task-service.service';
+import { AddTodoComponent } from '../add-todo/add-todo.component';
+
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [TaskItemComponent,FormsModule,CommonModule],
+  imports: [TaskItemComponent,FormsModule,CommonModule, AddTodoComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
