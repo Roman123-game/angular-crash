@@ -3,7 +3,9 @@
   <app-header></app-header>
   <div class="container">
     <app-task></app-task>
-    <app-button (btnClick)="togglClick()"></app-button>
+    <app-button
+    (btnClick)="togglClick()"
+    [color]="'green'"></app-button>
   </div>
 </main>
 

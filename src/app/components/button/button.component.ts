@@ -24,4 +24,6 @@ export class ButtonComponent {
     this.btnClick.emit();
   }
 
+
+
 }

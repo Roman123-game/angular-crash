@@ -14,14 +14,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 })
 export class TaskItemComponent implements OnInit {
   @Input() task:any;
-  @Output() onDeleteTask: EventEmitter<TaskType>= new EventEmitter
+  @Output() onDeleteTaskEmitter: EventEmitter<TaskType>= new EventEmitter
+  @Output() onToggleTaskEmitter: EventEmitter<TaskType>= new EventEmitter
 
   faTimes = faTimes
 
 
   ngOnInit(): void { }
 
-  onDelete(task:TaskType){
-    this.onDeleteTask.emit(task)
+  onDeleteItem(task:TaskType){
+    console.log("click")
+    this.onDeleteTaskEmitter.emit(task)
+  }
+  onToggleItem(task:TaskType){
+    this.onToggleTaskEmitter.emit(task)
   }
 }

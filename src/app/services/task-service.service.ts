@@ -4,6 +4,13 @@ import { TaskType } from '../objects/TaskType';
 import {Observable,of} from 'rxjs';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 
+
+const httpOptions ={
+  headers:new HttpHeaders({
+    'Content-Type': 'aplication/json'
+  })
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -18,6 +25,10 @@ export class TaskServiceService {
   deleteTask(task: TaskType): Observable<TaskType> {
     const url = `${this.apiUrl}/${task.id}`;
     return this.http.delete<TaskType>(url);
+  }
+  toggleTaskService(task: TaskType): Observable<TaskType> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.put<TaskType>(url,task,httpOptions);
   }
 
 }
