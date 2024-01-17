@@ -39,8 +39,7 @@ export class TaskComponent implements OnInit {
     this.taskService.toggleTaskService(task).subscribe()
   }
 
-  addTask(event:any){
-    console.log("click")
-
+  addTask(task:TaskType){
+    this.taskService.addTask(task).subscribe((task) => this.tasks.push(task))
   }
 }
