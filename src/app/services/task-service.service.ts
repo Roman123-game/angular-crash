@@ -15,4 +15,9 @@ export class TaskServiceService {
   getTasks ():Observable <TaskType[]>{
     return this.http.get<TaskType[]>(this.apiUrl);
   }
+  deleteTask(task: TaskType): Observable<TaskType> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<TaskType>(url);
+  }
+
 }
