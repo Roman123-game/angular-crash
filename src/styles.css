@@ -54,6 +54,10 @@ body {
   width: 100%;
 }
 
+.btn-submit{
+  width: 60%
+}
+
 .form-control {
   margin: 20px 0;
 }

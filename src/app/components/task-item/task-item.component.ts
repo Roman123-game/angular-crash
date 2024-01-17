@@ -20,6 +20,8 @@ export class TaskItemComponent implements OnInit {
   faTimes = faTimes
 
 
+
+
   ngOnInit(): void { }
 
   onDeleteItem(task:TaskType){
