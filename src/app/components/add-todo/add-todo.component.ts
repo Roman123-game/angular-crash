@@ -4,18 +4,21 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { UiService } from '../../services/ui.service';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
 @Component({
   selector: 'app-add-todo',
   standalone: true,
-  imports: [ FormsModule,CommonModule],
+  imports: [ FormsModule,CommonModule,FontAwesomeModule],
   templateUrl: './add-todo.component.html',
   styleUrl: './add-todo.component.css'
 })
 export class AddTodoComponent {
   @Output() onAddTask: EventEmitter<TaskType> = new EventEmitter();
+  faBell = faBell
   text: string ='';
   day: string= '';
   reminder: boolean = false;

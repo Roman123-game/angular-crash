@@ -24,7 +24,11 @@ class="add-form"
     />
   </div>
   <div class="form-control form-control-check">
-    <label for="reminder">Set Reminder</label>
+    <fa-icon [icon]="faBell"></fa-icon>
+    <label for="reminder">Reminder</label>
+
+
+
     <input
     [(ngModel)]="reminder"
       type="checkbox"
