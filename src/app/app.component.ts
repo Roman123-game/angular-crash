@@ -19,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     TaskComponent,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule ],
+    HttpClientModule,
+ ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
