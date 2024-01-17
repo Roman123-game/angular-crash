@@ -23,7 +23,6 @@ export class TaskItemComponent implements OnInit {
   ngOnInit(): void { }
 
   onDeleteItem(task:TaskType){
-    console.log("click")
     this.onDeleteTaskEmitter.emit(task)
   }
   onToggleItem(task:TaskType){

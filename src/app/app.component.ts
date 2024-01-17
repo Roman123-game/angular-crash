@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TaskComponent } from './components/tasks/tasks.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,14 +18,11 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonComponent,
     TaskComponent,
     FontAwesomeModule,
+    FormsModule,
     HttpClientModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'angular-crash';
-
-  togglClick(){
-    console.log('gdfs')
-  }
 }
