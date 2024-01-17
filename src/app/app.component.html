@@ -1,11 +1,13 @@
 
 <main class="main" >
   <app-header></app-header>
+  <app-button
+  (btnClick)="togglClick()"
+  [color]="'orange'"></app-button>
   <div class="container">
+
     <app-task></app-task>
-    <app-button
-    (btnClick)="togglClick()"
-    [color]="'orange'"></app-button>
+
   </div>
 </main>
 
