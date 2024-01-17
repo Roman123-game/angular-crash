@@ -1,11 +1,12 @@
 import { Component,Output,EventEmitter } from '@angular/core';
 import { TaskType } from '../../objects/TaskType';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-add-todo',
   standalone: true,
-  imports: [ FormsModule],
+  imports: [ FormsModule,CommonModule],
   templateUrl: './add-todo.component.html',
   styleUrl: './add-todo.component.css'
 })
