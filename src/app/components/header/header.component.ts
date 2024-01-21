@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  title: string = 'Angular Tasksö';
+  title: string = 'Angular Tasks';
   showAddTask: boolean = false;
   subscription: Subscription ;
 
