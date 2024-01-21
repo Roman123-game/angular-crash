@@ -44,6 +44,6 @@ export class TaskComponent implements OnInit {
 
   addTask(task:TaskType){
     // this.taskService.addTask(task).subscribe((task) => this.tasks.push(task))
-    this.tasks.push(taskö)
+    this.tasks.push(task)
   }
 }
