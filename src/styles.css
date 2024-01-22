@@ -19,7 +19,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;ö
+  justify-content: center;
   width: 350px;
   border: 1px solid steelblue;
   min-width: 350px;
