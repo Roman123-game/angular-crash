@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 350px;
-  border: 1px solid steelblue;
+  border: 3px double steelblue;
   min-width: 350px;
   text-align: center;
   overflow: auto;
@@ -93,7 +93,7 @@ body {
 
 .main-head{
   margin: 1px;
-  border: 1px solid blue;
+  border: 3px double steelblue;
   border-radius: 6px;
 }
 
