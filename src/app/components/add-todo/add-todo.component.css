@@ -1,4 +1,8 @@
 input:checked
 {
   accent-color: violet;
+
+}
+.labelReminder{
+  margin: 5px;
 }
