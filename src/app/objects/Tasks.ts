@@ -4,19 +4,19 @@ export const Tasks = [
   {
     id: 1,
     text: 'Doctors Appointment',
-    day: 'May 5th at 2:30pm',
+    day:  new Date('05 October 2011 14:48 UTC'),
     reminder: true,
   },
   {
     id: 2,
     text: 'Meeting at School',
-    day: 'May 6th at 1:30pm',
+    day: new Date('05 October 2011 14:48 UTC'),
     reminder: true,
   },
   {
     id: 3,
     text: 'Food Shopping',
-    day: 'May 7th at 12:30pm',
+    day: new Date('05 October 2011 14:48 UTC'),
     reminder: false,
   },
 ];
